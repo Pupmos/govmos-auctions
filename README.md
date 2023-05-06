@@ -66,7 +66,7 @@ Future work may involve exploring additional models and mechanisms to further en
 
 ## Prior Work
 
-Having delved into the details of our proposed mechanism, it is crucial to acknowledge the existing research and contributions that have been made in the field of decentralized market mechanisms, tokenomics, and cryptoeconomics. In this section, I briefly review the most influential and relevant prior work that has laid the foundation for our research.
+Having delved into the details of my proposed mechanism, it is crucial to acknowledge the existing research and contributions that have been made in the field of decentralized market mechanisms, tokenomics, and cryptoeconomics. In this section, I briefly review the most influential and relevant prior work that has laid the foundation for my research.
 
 
 1. **Dutch Auctions**: Also known as the falling-price auction, the Dutch auction starts with a high initial price that decreases over time until a buyer accepts the current price. In the context of decentralized market mechanisms, Dutch auctions have been employed in initial coin offerings (ICOs) and token sales, as well as token swaps (Mcafee, 1992).
@@ -77,4 +77,4 @@ Having delved into the details of our proposed mechanism, it is crucial to ackno
 
 4. **Cryptoeconomic Mechanism Design**: Researchers have focused on designing cryptoeconomic mechanisms that consider the strategic behavior of market participants, aiming to achieve desired outcomes in decentralized settings (Buterin et al., 2018; Zohar, 2015). Mechanism design for DeFi markets often involves incorporating game-theoretic concepts and tools, as well as cryptographic primitives.
 
-The aforementioned prior work has significantly contributed to our understanding of decentralized market mechanisms and provided the foundation upon which I have built this research. By leveraging the insights and techniques from these seminal works, I have designed a novel, efficient, and fair token distribution mechanism that addresses the unique challenges and requirements of the DeFi ecosystem.
+The aforementioned prior work has significantly contributed to my understanding of decentralized market mechanisms and provided the foundation upon which I have built this research. By leveraging the insights and techniques from these seminal works, I have designed a novel, efficient, and fair token distribution mechanism that addresses the unique challenges and requirements of the DeFi ecosystem.
