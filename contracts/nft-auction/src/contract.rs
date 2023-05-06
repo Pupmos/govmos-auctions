@@ -1,6 +1,6 @@
 use cosmwasm_std::{
-    coins, to_binary, wasm_execute, BankMsg, Binary, Deps, DepsMut, Env, Event, MessageInfo,
-    Response, StdError, StdResult, Timestamp, Uint128,
+    coins, entry_point, to_binary, wasm_execute, BankMsg, Binary, Deps, DepsMut, Env, Event,
+    MessageInfo, Response, StdError, StdResult, Timestamp, Uint128,
 };
 use cw2::set_contract_version;
 use cw721::Cw721ReceiveMsg;
@@ -13,6 +13,7 @@ use crate::state::{AUCTION_INFO, BID_HISTORY};
 const CONTRACT_NAME: &str = "crates.io:nft-auction";
 const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");
 
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn instantiate(
     deps: DepsMut,
     _env: Env,
@@ -60,6 +61,7 @@ pub fn instantiate(
     Ok(Response::default())
 }
 
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn execute(
     deps: DepsMut,
     env: Env,
@@ -73,6 +75,7 @@ pub fn execute(
     }
 }
 
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn query(deps: Deps, _env: Env, msg: QueryMsg) -> Result<Binary, StdError> {
     match msg {
         QueryMsg::AuctionInfo {} => query_auction_info(deps),
